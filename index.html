@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darkroom Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <div class="announcement-bar">
+          Yoga with Dr. Danielle -- LIVE class in session
+        </div>
+        <div class="nav-wrapper">
+          <div>
+            <a href="#">LOGO</a>
+          </div>
+
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="hamburger-open"
+              src="images/hamburger-open.svg"
+              alt=""
+            />
+            <img
+              class="hamburger-close"
+              src="images/hamburger-close.svg"
+              alt=""
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul aria-label="Primary" role="list" class="nav-list">
+              <li><a href="#">SHOP</a></li>
+              <li>
+                <a href="#">ABOUT</a>
+                <ul role="list" class="sub-nav-list sub-menu-grid">
+                  <li>Our Story</li>
+                  <li>Our Approach</li>
+                  <li>Our Community</li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#">BLOG</a>
+              </li>
+              <li>
+                <a href="#">EXPERIENCES</a>
+              </li>
+            </ul>
+          </nav>
+          <nav
+            class="secondary-navigation display-sm-none display-md"
+            id="secondary-navigation"
+          >
+            <ul role="list" class="nav-list">
+              <li><a href="#">SIGN IN</a></li>
+              <li><a href="#">SEARCH</a></li>
+              <li><a href="#">CART</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="even-columns">
+            <div
+              style="
+                display: grid;
+                place-items: center;
+                grid-template-areas: 'inner-img';
+              "
+            >
+              <img
+                style="grid-area: inner-img"
+                src="images/welcome.svg"
+                alt="welcome"
+              />
+              <img
+                style="grid-area: inner-img"
+                src="images/hero.png"
+                alt="hero image"
+              />
+            </div>
+            <div>
+              <h1>Start living your healthiest life.</h1>
+              <p>
+                We provide wellness experiences and lifestyle design tools to
+                help you live your happiest + healthiest life. We focus on mind
+                + body + spirit and teach you how to step into your power and
+                create the life of your dreams. We connect you with a
+                like-minded community because we are a tribe and we’ve been
+                waiting for you.
+              </p>
+              <a href="#" class="cta">Join the Community</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container">
+          <div class="uneven-columns">
+            <div>
+              <h2>Be happy, be healthy, be fly.</h2>
+              <p>Live your best life in Fierce Clarity Activewear.</p>
+              <a href="#" class="cta">Shop the collection</a>
+            </div>
+            <div class="carousel"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="">
+      <div class="container">
+        <div class="even-columns">
+          <div>
+            <a href="#">
+              <svg>
+                <rect
+                  width="150"
+                  height="30"
+                  style="fill: grey; stroke: rgb(0, 0, 0)"
+                ></rect>
+              </svg>
+            </a>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <h3>Support</h3>
+              <ul aria-label="Footer" role="list">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping + Returns</a></li>
+                <li><a href="#">Sizing</a></li>
+                <li><a href="#">Privacy & Terms</a></li>
+                <li><a href="#">Cookie Use</a></li>
+                <li><a href="#">Site Map</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <nav class="footer-nav">
+              <h3>About</h3>
+              <ul aria-label="Footer" role="list">
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Media + Parternships</a></li>
+                <li><a href="#">FC Gang</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <h3>Contact Us</h3>
+            <p>info@fierceclarity.com</p>
+            <ul role="list" aria-label="Social links">
+              <li><a aria-label="instagram" href="#"></a></li>
+              <li><a aria-label="facebook" href="#"></a></li>
+              <li><a aria-label="twitter" href="#"></a></li>
+              <li><a aria-label="tiktok" href="#"></a></li>
+              <li><a aria-label="youtube" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="copyright">
+            <p>Copyright Fierce Clarity 2021 &copy All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
