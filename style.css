@@ -1,11 +1,43 @@
-root {
+/* custom variables*/
+:root {
   --text-color: #222222;
   --nav-text-color: #485042;
   --bg-color: #e5e5e5;
+  --footer-bg: #d8dede;
+  --footer-color: #42716b;
   --swatch-color-1: #ffa877;
   --swatch-color-2: #ed7285;
   --swatch-color-3: #e1ae7f;
   --swatch-color-4: #02b4e3;
+
+  --ff-primary: "Montserrat", sans-serif;
+  --ff-secondary: "PTSerif", serif;
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  --font-size-00: 0.5rem;
+  --font-size-0: 0.75rem;
+  --font-size-1: 1rem;
+  --font-size-2: 1.1rem;
+  --font-size-3: 1.25rem;
+  --font-size-4: 1.5rem;
+  --font-size-5: 2rem;
+  --font-size-6: 2.5rem;
+  --font-size-7: 3rem;
+  --font-size-8: 3.5rem;
+  --font-size-9: 4rem;
+
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 1rem;
+  --size-4: 1.25rem;
+  --size-5: 1.5rem;
+  --size-6: 1.75rem;
+  --size-7: 2rem;
+  --size-8: 3rem;
+  --size-9: 4rem;
 }
 
 /* Box sizing rules */
@@ -84,9 +116,9 @@ svg {
 
 /* general styles */
 body {
-  font-size: 1rem;
-  font-family: "Inter", sans-serif;
-  color: #222222;
+  font-size: var(--font-size-1);
+  font-family: var(--ff-primary);
+  color: var(--text-color);
 }
 p {
   max-width: 45ch;
@@ -108,6 +140,30 @@ p {
   .even-columns {
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+}
+.uneven-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 50em) {
+  .uneven-columns {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+.footer-columns {
+  display: grid;
+  gap: 1rem;
+}
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 50em) {
+  .footer-columns {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
   }
 }
 
@@ -215,4 +271,67 @@ ul li ul li {
   .mobile-nav-toggle .hamburger-close {
     display: none;
   }
+}
+
+/* footer */
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-color);
+  padding-top: var(--size-7);
+}
+.footer-nav a {
+  text-decoration: none;
+  color: var(--footer-color);
+}
+.footer-nav a:is(:hover, :focus) {
+  color: var(--nav-text-color);
+}
+.copyright {
+  font-size: var(--font-size-0);
+  padding: var(--size-3);
+}
+.logo {
+  font-size: var(--font-size-6);
+  text-decoration: none;
+}
+.footer-heading {
+  font-family: var(--ff-secondary);
+  font-size: var(--font-size-4);
+}
+.fs-00 {
+  font-size: var(--font-size-00);
+}
+.fs-0 {
+  font-size: var(--font-size-0);
+}
+.fs-1 {
+  font-size: var(--font-size-1);
+}
+.fs-2 {
+  font-size: var(--font-size-2);
+}
+.fs-3 {
+  font-size: var(--font-size-3);
+  line-height: 1.1;
+}
+.fs-4 {
+  font-size: var(--font-size-4);
+}
+.fs-5 {
+  font-size: var(--font-size-5);
+}
+.fs-6 {
+  font-size: var(--font-size-6);
+}
+.fs-7 {
+  font-size: var(--font-size-7);
+}
+.fs-8 {
+  font-size: var(--font-size-8);
+  line-height: 1.1;
+}
+.fs-9 {
+  font-size: var(--font-size-9);
+  line-height: 1.1;
+  font-weight: var(--fw-semi-bold);
 }
