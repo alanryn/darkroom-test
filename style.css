@@ -3,6 +3,7 @@
   --text-color: #222222;
   --nav-text-color: #485042;
   --bg-color: #e5e5e5;
+  --announcement-color: #fcfea2;
   --footer-bg: #d8dede;
   --footer-color: #42716b;
   --swatch-color-1: #ffa877;
@@ -169,15 +170,36 @@ p {
 
 .announcement-bar {
   border-radius: 100vmax;
-  background-color: #222222;
-  color: yellow;
+  background-color: var(--text-color);
+  color: var(--announcement-color);
   padding-block: 0.5rem;
   text-align: center;
+  margin-bottom: var(--size-5);
+  font-size: var(--font-size-0);
 }
-
+.hero-text {
+  padding: 8rem 2rem 0 4rem;
+}
+.hero-paragraph {
+  margin-top: 1rem;
+}
+.cta {
+  font-family: var(--ff-secondary);
+  font-size: var(--font-size-4);
+  text-decoration: none;
+  color: var(--text-color);
+  display: inline-flex;
+  margin-top: var(--size-9);
+}
+.arrow {
+  height: 2rem;
+  width: 2rem;
+  border: solid red 1px;
+}
 /* navigation */
 .primary-header {
-  margin-top: 1rem;
+  margin-top: var(--size-3);
+  margin-bottom: var(--size-7);
 }
 .nav-wrapper {
   display: flex;
@@ -204,22 +226,26 @@ p {
   color: grey;
 }
 .sub-nav-list {
-  padding: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
+  margin-top: -3rem;
 }
+
 .sub-menu-grid {
   display: grid;
   gap: 2rem;
-  grid-template-columns: repeat(3, max-content);
+  grid-template-columns: repeat(3, minmax(270px, 1fr));
 }
 ul li ul {
-  background: #fff;
+  background-color: #fff;
   visibility: hidden;
   opacity: 0;
   min-width: 5rem;
   position: absolute;
   transition: all 0.5s ease;
-  left: 0;
+  left: -250px;
   display: none;
+  border: #222222 solid 1px;
+  border-radius: 1rem;
 }
 
 ul li:hover > ul,
@@ -272,7 +298,13 @@ ul li ul li {
     display: none;
   }
 }
-
+.menu-heading {
+  font-family: var(--ff-secondary);
+  font-size: var(--font-size-4);
+}
+.menu-description {
+  margin-top: var(--size-5);
+}
 /* footer */
 .footer {
   background-color: var(--footer-bg);
@@ -298,6 +330,9 @@ ul li ul li {
   font-family: var(--ff-secondary);
   font-size: var(--font-size-4);
 }
+
+/* footer end*/
+
 .fs-00 {
   font-size: var(--font-size-00);
 }
