@@ -305,6 +305,51 @@ ul li ul li {
 .menu-description {
   margin-top: var(--size-5);
 }
+
+/* gallery */
+.gallery-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card > img {
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card > img:first-child {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.card > a {
+  align-self: start;
+}
+.color-swatch {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 100%;
+}
+.color-swatch-1 {
+  background-color: var(--swatch-color-1);
+}
+.color-swatch-2 {
+  background-color: var(--swatch-color-2);
+}
+.color-swatch-3 {
+  background-color: var(--swatch-color-3);
+}
+.color-swatch-4 {
+  background-color: var(--swatch-color-4);
+}
 /* footer */
 .footer {
   background-color: var(--footer-bg);
