@@ -295,6 +295,12 @@ ul li ul li {
   clear: both;
   width: 100%;
 }
+.flex-sm-nav {
+  display: flex;
+}
+.cart-icon-sm-margin {
+  margin-right: 1rem;
+}
 .display-sm-none {
   display: none;
 }
