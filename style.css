@@ -185,6 +185,8 @@ p {
 .hero-text {
   padding: 8rem 2rem 0 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 @media (min-width: 50em) {
   .hero-text {
@@ -206,6 +208,13 @@ p {
   height: 2rem;
   width: 2rem;
 }
+.star {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 4rem;
+  align-self: flex-end;
+}
+
 /* navigation */
 .primary-header {
   margin-top: var(--size-3);
@@ -328,22 +337,30 @@ ul li ul li {
   gap: 1rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 .card > img {
   aspect-ratio: 2/3;
   object-fit: cover;
   width: 100%;
 }
-.card > img:first-child {
-  border-radius: 0.5rem 0.5rem 0 0;
+.card-margin {
+  margin-left: 5px;
 }
-.card > a {
-  align-self: start;
+.card-anchor {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.swatch-spacing {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5px;
 }
 .color-swatch {
   height: 1rem;
   width: 1rem;
   border-radius: 100%;
+  margin: 0 4px;
 }
 .color-swatch-1 {
   background-color: var(--swatch-color-1);
