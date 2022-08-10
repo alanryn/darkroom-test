@@ -261,6 +261,13 @@ p {
   gap: 2rem;
   grid-template-columns: repeat(3, minmax(270px, 1fr));
 }
+.about-links.active {
+  display: flex;
+}
+.sub-about-links.active {
+  display: none;
+}
+
 ul li ul {
   background-image: linear-gradient(
     to bottom,
@@ -297,6 +304,7 @@ ul li ul li {
 }
 .flex-sm-nav {
   display: flex;
+  align-items: center;
 }
 .cart-icon-sm-margin {
   margin-right: 1rem;
@@ -332,6 +340,8 @@ ul li ul li {
 
   .primary-navigation[data-visible] {
     display: block;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
   }
   .secondary-navigation[data-visible] {
     display: none;
@@ -344,6 +354,12 @@ ul li ul li {
     padding: 0.5em;
   }
   .mobile-nav-toggle .hamburger-close {
+    display: none;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] .hamburger-close {
+    display: block;
+  }
+  .mobile-nav-toggle[aria-expanded="true"] .hamburger-open {
     display: none;
   }
 }
