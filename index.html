@@ -47,7 +47,7 @@
           </div>
 
           <nav class="primary-navigation" id="primary-navigation">
-            <ul aria-label="Primary" role="list" class="nav-list">
+            <ul aria-label="Primary" role="list" id="#main" class="nav-list">
               <li class="display-sm-none display-md"><a href="#">SHOP</a></li>
               <li class="display-sm-none display-md">
                 <a href="#">ABOUT</a>
@@ -88,18 +88,61 @@
                 <a href="#">EXPERIENCES</a>
               </li>
               <!-- mobile nav items -->
-              <li class="extra-md-none extra-sm menu-heading">
-                <a href="#">Shop</a>
-              </li>
-              <li class="extra-md-none extra-sm menu-heading">
-                <a href="#">About</a>
-              </li>
-              <li class="extra-md-none extra-sm menu-heading">
-                <a href="#">Community</a>
-              </li>
-              <li class="extra-md-none extra-sm menu-heading">
-                <a href="#">Experiences</a>
-              </li>
+
+              <ul class="main-menu" role="list">
+                <li class="extra-md-none extra-sm menu-heading">
+                  <a href="#">Shop</a>
+                </li>
+                <li class="extra-md-none extra-sm menu-heading">
+                  <a class="main-about" href="#">About</a>
+                </li>
+                <li class="extra-md-none extra-sm menu-heading">
+                  <a class="main-community" href="#">Community</a>
+                </li>
+                <li class="extra-md-none extra-sm menu-heading">
+                  <a class="main-experiences" href="#">Experiences</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-about" role="list" hidden>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a class="sub-about" href="#">About</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">Our Story</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">Our Approach</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">Our Community</a>
+                </li>
+              </ul>
+              <ul class="sub-menu-community" role="list" hidden>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a class="sub-community" href="#">Community</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">Universal Wellness</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">Classes</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">FC Gang</a>
+                </li>
+              </ul>
+
+              <ul class="sub-menu-experiences" role="list" hidden>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a class="sub-experiences" href="#">Experiences</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">FC Experiences</a>
+                </li>
+                <li class="extra-md-none extra-sm sub-menu-heading">
+                  <a href="#">Custom Events</a>
+                </li>
+              </ul>
               <li style="margin-top: 4rem" class="extra-md-none extra-sm fs-4">
                 <a href="#">Search</a>
               </li>
