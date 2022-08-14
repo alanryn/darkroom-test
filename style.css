@@ -382,6 +382,11 @@ ul li ul li {
 .sub-menu-heading:first-child::before {
   content: url("images/arrow-back.svg");
 }
+.sub-menu-heading:first-child a {
+  background-color: var(--announcement-color);
+  border-radius: 100%;
+  padding: 0.7rem;
+}
 
 .sub-menu-heading:first-child:hover::before,
 .sub-menu-heading:first-child:focus::before {
